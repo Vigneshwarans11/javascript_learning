@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <title>celsius to faraheat</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>celsius to Faraheat</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="Enter the celsius">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">convert to Faraheat</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        function convert(){
+            let celsiusValue = Number(document.getElementById("input").value)
+            let faraheatValue=(celsiusValue * 9/5 ) + 32
+            let result= document.getElementById("result")
+            result.innerHTML = faraheatValue.toFixed(2)+"   faraheat"
+        }      
+    </script>
+</body>
+</html>
