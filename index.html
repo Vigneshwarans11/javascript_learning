@@ -94,7 +94,7 @@
     array.splice(1,1,'m')
     console.log(array)
 
-    array.splice(1,2,'m','n')
+    array.splice(1,2,'x','n')
     console.log(array)
 
     array.splice(1,0,'b')
@@ -102,6 +102,61 @@
 
 
     //slice - starting index , ending index)
+    console.log(array.slice(1,2))
+
+    //reverse
+    console.log(array.reverse())
+
+    //join - convert array into string
+
+    let str4=array.join()
+    console.log(str4)
+
+    //split -convert string to array
+
+    let str5="f,r,w,u,t"
+    let arr1=str5.split(",")
+    console.log(arr1)
+
+    //concat and spread operator
+    let firstarr =[1,2,3];
+    let secondarr =[4,5,6];
+
+    let joinedarr =[firstarr,secondarr]
+    console.log(joinedarr)
+
+  joinedarr = firstarr.concat(secondarr)
+    console.log(joinedarr)
+
+    let joined = [...firstarr,...secondarr]
+    console.log(joined)
+
+    //practices
+
+    //replace elemts
+    let Arr=[5,8,10,7,9,11]
+    Arr.splice(3,5,'77','99','111')
+    console.log(Arr) // [5, 8, 10, '77', '99', '111']
+
+    
+    //add at begin 
+    console.log(Arr.unshift("100"))
+    console.log(Arr)//['100', 5, 8, 10, '77', '99', '111']
+
+    //insert 200 at end and one positiohn 1000
+    Arr.push(200,1000)
+    console.log(Arr)
+
+    //insert 0 in the middle  se arr.length to find ,iddle position
+    Arr.splice((Arr.length)/2,0,0)
+    console.log(Arr) //['100', 5, 8, 10, 0, '77', '99', '111', 200, 1000]
+
+
+
+
+
+    
+
 
     
 
